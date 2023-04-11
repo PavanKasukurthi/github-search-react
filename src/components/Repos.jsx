@@ -1,10 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
-import { GithubContext } from '../context/context';
-import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from './Charts';
+import React from 'react'
+import styled from 'styled-components'
+import { GithubContext } from '../context/context'
+import { ExampleChart, Pie3D, Column3D, Bar3D, Doughnut2D } from './Charts'
+import { useContext } from 'react'
 const Repos = () => {
-  return <h2>repos component</h2>;
-};
+  const { repos } = useContext(GithubContext)
+
+  // console.log(repos)
+
+  return <h2>repos component</h2>
+}
 
 const Wrapper = styled.div`
   display: grid;
@@ -28,6 +33,6 @@ const Wrapper = styled.div`
     width: 100% !important;
     border-radius: var(--radius) !important;
   }
-`;
+`
 
-export default Repos;
+export default Repos
