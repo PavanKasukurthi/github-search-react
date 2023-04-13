@@ -25,7 +25,7 @@ const Card = () => {
           <h4>{login}</h4>
           <p>@{twitter_username || 'null'}</p>
         </div>
-        <a href="{html_url}" target="_blank">
+        <a href={html_url} target="_blank">
           follow
         </a>
       </header>

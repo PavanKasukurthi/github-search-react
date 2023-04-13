@@ -79,5 +79,9 @@ const Wrapper = styled.article`
       color: var(--clr-grey-5);
     }
   }
+
+  .followers::-webkit-scrollbar {
+    display: none;
+  }
 `
 export default Followers
